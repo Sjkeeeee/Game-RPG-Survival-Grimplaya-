@@ -7,42 +7,29 @@
   <style>
     *{box-sizing:border-box}
     html,body{margin:0;min-height:100%;background:#06070b;color:#f3f6fb;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-    body{
-      min-height:100vh;display:flex;align-items:center;justify-content:center;
-      background:
-        radial-gradient(circle at 20% 10%,rgba(92,225,230,.12),transparent 28%),
-        radial-gradient(circle at 80% 90%,rgba(153,51,255,.12),transparent 30%),
-        #06070b;
-      padding:24px;
-    }
-    .wrap{width:min(760px,100%)}
+    body{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;background:radial-gradient(circle at 20% 10%,rgba(92,225,230,.12),transparent 28%),radial-gradient(circle at 80% 90%,rgba(153,51,255,.12),transparent 30%),#06070b}
+    .wrap{width:min(900px,100%)}
     .eyebrow{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#6f7b90;margin-bottom:8px}
     h1{margin:0;font-size:clamp(34px,8vw,64px);line-height:.95}
     .sub{margin:14px 0 26px;color:#9da8ba;line-height:1.5}
-    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-    .card{
-      display:block;text-decoration:none;color:inherit;
-      border:1px solid #212838;border-radius:18px;padding:22px;
-      background:rgba(14,17,25,.88);
-      transition:.16s transform,.16s border-color,.16s background;
-      min-height:190px;
-    }
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .card{display:block;text-decoration:none;color:inherit;border:1px solid #212838;border-radius:18px;padding:22px;background:rgba(14,17,25,.88);transition:.16s transform,.16s border-color,.16s background;min-height:205px}
     .card:hover,.card:active{transform:translateY(-2px);border-color:#5ce1e6;background:#111722}
     .tag{display:inline-flex;padding:5px 9px;border-radius:999px;background:#162129;color:#5ce1e6;font-size:12px;font-weight:700}
     .latest{background:#24172f;color:#d8a7ff}
+    .diablo{background:#2b1515;color:#e8c48a}
     .ver{font-size:28px;font-weight:800;margin:22px 0 8px}
     .desc{color:#9da8ba;line-height:1.45}
     .arrow{margin-top:18px;font-weight:800}
     .foot{margin-top:18px;color:#667085;font-size:12px}
-    @media(max-width:640px){.grid{grid-template-columns:1fr}.card{min-height:160px}}
+    @media(max-width:800px){.grid{grid-template-columns:1fr}.card{min-height:160px}}
   </style>
 </head>
 <body>
   <main class="wrap">
     <div class="eyebrow">SJKEEEEE GAMES</div>
     <h1>GRIMPLAYA<br>SURVIVAL</h1>
-    <p class="sub">Выбери версию. Обе сборки работают отдельно и не мешают друг другу.</p>
-
+    <p class="sub">Выбери версию. Все сборки работают отдельно и не мешают друг другу.</p>
     <section class="grid">
       <a class="card" href="./index.html">
         <span class="tag">ORIGINAL</span>
@@ -50,15 +37,19 @@
         <div class="desc">Первая опубликованная версия Survivors.</div>
         <div class="arrow">Играть →</div>
       </a>
-
       <a class="card" href="./index1.html">
-        <span class="tag latest">LATEST</span>
-        <div class="ver">v1.3</div>
-        <div class="desc">Full Mechanics + New Graphics, большой мир и мини-карта.</div>
+        <span class="tag latest">v1.3</span>
+        <div class="ver">Full Mechanics</div>
+        <div class="desc">Расширенная механика, большой мир и мини-карта.</div>
+        <div class="arrow">Играть →</div>
+      </a>
+      <a class="card" href="./index2.html">
+        <span class="tag diablo">NEW · DIABLO STYLE</span>
+        <div class="ver">v0.6</div>
+        <div class="desc">Тёмная Diablo-стилистика, отдельный прогресс, настройки, боссы и новый визуальный стиль.</div>
         <div class="arrow">Играть →</div>
       </a>
     </section>
-
     <div class="foot">Game RPG Survival Grimplaya — version launcher</div>
   </main>
 </body>
